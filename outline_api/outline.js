@@ -24,6 +24,7 @@ async function addOutlineServer(key) {
     }
 }
 
+
 async function toggleOutlineServer(serverId, enable) {
     try {
         // Включение или выключение сервера в зависимости от состояния переключателя
