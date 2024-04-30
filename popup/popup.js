@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+
     // Слушатель для кнопки "Add Server"
     document.getElementById('addServerBtn').addEventListener('click', function() {
         document.getElementById('serverKeyEntry').style.display = 'block';
