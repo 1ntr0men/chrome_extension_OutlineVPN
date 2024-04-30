@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    width: 200px; /* или любой размер, который тебе нравится */
+}
+
+h1 {
+    font-size: 16px;
+}
+
+/* Стилизация переключателя */
+.switch {
+    position: relative;
+    display: block; /* Изменено с inline-block на block */
+    width: 60px;
+    height: 34px;
+    margin-top: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Стили для кнопки "Add Server" */
+button {
+    background-color: #4CAF50; /* Зеленый цвет */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: block; /* Чтобы кнопка растягивалась на всю ширину */
+}
+
+button:hover {
+    background-color: #45a049; /* Темно-зеленый цвет при наведении */
+}
+
+/* Стили для скрытого поля ввода */
+#serverKeyEntry {
+    display: none; /* Скрыто по умолчанию */
+    margin-top: 10px;
+}
+
+#serverKeyInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Включаем border-box для корректного расчета ширины */
+}
+
+#saveServerKeyBtn {
+    background-color: #2196F3; /* Синий цвет */
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box; /* Включаем border-box для корректного расчета ширины */
+}
+
+#saveServerKeyBtn:hover {
+    background-color: #0b7dda; /* Темно-синий цвет при наведении */
+}

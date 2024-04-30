@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline VPN Control</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<h1>Outline VPN Control</h1>
+<label class="switch">
+    <input type="checkbox" id="vpnToggle">
+    <span class="slider round"></span>
+</label>
+
+<!-- Кнопка для добавления сервера -->
+<button id="addServerBtn">Add Server</button>
+
+<!-- Скрытое поле для ввода ключа сервера -->
+<div id="serverKeyEntry" style="display:none;">
+    <input type="text" id="serverKeyInput" placeholder="Enter Server Key">
+    <button id="saveServerKeyBtn">Save</button>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
